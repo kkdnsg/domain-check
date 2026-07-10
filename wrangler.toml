@@ -4,8 +4,8 @@ compatibility_date = "2025-11-17"
 keep_vars = true
 
 [[kv_namespaces]]
-binding = "DOMAIN_KV" 
-id = "{CF_KV_ID}" # action部署时被变量替换
+binding = "DOMAIN_KV"
+id = "你的真实KV_ID"          # ← 改成真实ID
 
 [triggers]
-crons = ["{CF_CRONS}"] # action部署时被变量替换，默认为北京时间 9:00 和 21:00
+crons = ["0 9 * * *", "0 21 * * *"]   # 北京时间每天 9:00 和 21:00
